@@ -1,0 +1,10 @@
+---
+# tasks file for docdeply
+
+- name: Deploy stack from a compose file
+  docker_stack:
+    state: present
+    name: blog
+    compose:
+      - /home/fortelogic/docker/stack.yml
+
